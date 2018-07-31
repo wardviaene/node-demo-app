@@ -21,7 +21,7 @@ app.get('/', function (req, res) {
   // create table if not exist
   con.query('INSERT INTO visits (ts) values (?)', Date.now(),function(err, dbRes) {
     if(err) throw err;
-    res.send('Hello World! You are visitor number '+dbRes.insertId);
+    res.send('Hello World (v0.0.2)! You are visitor number '+dbRes.insertId);
   });
 });
 
@@ -31,5 +31,5 @@ var server = app.listen(3000, function () {
   var host = server.address().address;
   var port = server.address().port;
 
-  console.log('Example app running');
+  console.log('Example app running (v0.0.2)');
 });

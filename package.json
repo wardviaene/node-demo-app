@@ -1,0 +1,14 @@
+{
+  "name": "node-demo-app",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "^4.6.1"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "mysql": "^2.16.0"
+  }
+}
